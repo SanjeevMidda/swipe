@@ -1,0 +1,133 @@
+*{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+}
+
+.arrowUp{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50vw;
+  transition: all 400ms;
+  cursor: none;
+  margin: 10px;
+}
+
+.arrowRight{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 30vw;
+  right: 0px;
+  transition: all 400ms;
+  cursor: none;
+  margin: 10px;
+
+}
+
+.arrowDown{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0px;
+  left:50vw;
+  transition: all 400ms;
+  cursor: none;
+  margin: 10px;
+
+}
+
+.arrowLeft{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 30vw;
+  left:0px;
+  transition: all 400ms;
+  cursor: none;
+  margin: 10px;
+
+}
+
+.arrowDown:hover, .arrowLeft:hover, .arrowRight:hover, .arrowUp:hover{
+  transform: scale(1.2);
+  transition: all 400ms;
+}
+
+img{
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.buildingOne{
+  animation-name: buildingOne;
+  animation-duration: 500ms;
+  position: relative;
+  z-index: 0;
+}
+
+.buildingTwo{
+  animation-name: buildingTwo;
+  animation-duration: 500ms;
+  z-index: 0;
+  position: relative;
+}
+
+.buildingThree{
+  animation-name: buildingThree;
+  animation-duration: 500ms;
+  z-index: 0;
+  position: relative;
+}
+
+.kyoto{
+  animation-name: kyoto;
+  animation-duration: 500ms;
+  z-index: 0;
+  position: relative;
+}
+
+@keyframes buildingOne {
+  from{bottom: -800px;}
+  to{bottom: 0px;}
+}
+
+@keyframes buildingTwo {
+  from{left: -800px;}
+  to{left: 0;}
+}
+
+@keyframes buildingThree {
+  from{top: -800px;}
+  to{top: 0px;}
+}
+
+@keyframes kyoto {
+  from{right: -800px;}
+  to{right: 0px;}
+}
+
+.first, h1{
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+}
+
+.second{
+  position: absolute;
+  z-index: 100;
+  top: 40px;
+  left: 10px;
+}
+
+.vertical{
+  writing-mode: vertical-lr;
+}
